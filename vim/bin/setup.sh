@@ -5,5 +5,7 @@ ENV_DIR=$(dirname $DIR)                                           # Get root env
 
 source $ENV_DIR/bin/include.sh
 
+mkdir -p ~/.vim
 link $DIR/config.vim   ~/.vimrc
+link $DIR/plug.vim     ~/.vim
 

@@ -1,5 +1,5 @@
 " Add plugins
-source $HOME/main/env/vim/plug.vim
+source ~/.vim/plug.vim
 
 " Add line numbers
 set number
