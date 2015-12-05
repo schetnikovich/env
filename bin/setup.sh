@@ -6,3 +6,4 @@ ENV_DIR=$(dirname $BIN_DIR)                                       # Get root env
 $ENV_DIR/vim/bin/setup.sh
 $ENV_DIR/vifm/bin/setup.sh
 $ENV_DIR/tmux/bin/setup.sh
+$ENV_DIR/ideavim/bin/setup.sh
