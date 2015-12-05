@@ -1,8 +1,7 @@
-" execute pathogen#infect()
-
+" Add plugins
 source $HOME/main/env/vim/plug.vim
 
-" add line numbers
+" Add line numbers
 set number
 
 set tabstop=4
@@ -41,6 +40,7 @@ let g:NERDTreeShowHidden=1
 " file syntaxes
 " associate *.foo with php filetype
 au BufRead,BufNewFile vifmrc setfiletype vim
+au BufRead,BufNewFile *.vifm setfiletype vim
 
 let g:neocomplete#enable_at_startup = 1
 
