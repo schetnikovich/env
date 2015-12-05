@@ -6,5 +6,7 @@ ENV_DIR=$(dirname $DIR)                                           # Get root env
 source $ENV_DIR/bin/include.sh
 
 mkdir -p ~/.vifm
-link $DIR/colors        ~/.vifm
-link $DIR/config.vifm   ~/.vifm/vifmrc
+mkdir -p ~/.vifm/colors
+
+link $DIR/colors/mine.vifm   ~/.vifm/colors/mine.vifm
+link $DIR/config.vifm        ~/.vifm/vifmrc

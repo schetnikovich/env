@@ -25,8 +25,7 @@ nnoremap yd :!echo %d | tr -d " \t\n\r" | xclip -sel clip %i<cr>
 " Yank current file path into the clipboard (and trim it before)
 nnoremap yf :!echo %c:p | tr -d " \t\n\r" | xclip -sel clip %i<cr>
 
-command tigstatus !tig status
-command tig !tig
+command tig !tig status
 command vim !vim %a 
 " command vgrep vim "+grep %a"
 command! run !! ./%f
