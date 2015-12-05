@@ -27,8 +27,13 @@ nnoremap yf :!echo %c:p | tr -d " \t\n\r" | xclip -sel clip %i<cr>
 
 command tig !tig status
 command vim !vim %a 
+command git !git %a 
 " command vgrep vim "+grep %a"
 command! run !! ./%f
+" Diff of two files 
+command! diff vim -d %f %F
+command! reload :write | restart
+
 
 
 nnoremap o :!thunar .<cr>

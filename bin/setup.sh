@@ -8,3 +8,4 @@ $ENV_DIR/vifm/bin/setup.sh
 $ENV_DIR/tmux/bin/setup.sh
 $ENV_DIR/ideavim/bin/setup.sh
 $ENV_DIR/bash/bin/setup.sh
+$ENV_DIR/git/bin/setup.sh

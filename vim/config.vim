@@ -13,6 +13,11 @@ set ignorecase
 set smartcase
 set incsearch
 
+set autoindent
+set smartindent
+filetype plugin on
+
+
 " Color scheme
 set t_Co=256 " enable 256 colors
 colorscheme molokai
@@ -31,11 +36,11 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTree
 
 " map Ctrl+N to toggle NERDTree
 map <C-n> :NERDTreeFocus<CR>
-
-nmap <F8> :TagbarToggle<CR>
-
+let NERDTreeIgnore = ['\.swp$']
 " show hidden files by default in NERDTree
 let g:NERDTreeShowHidden=1
+
+nmap <F8> :TagbarToggle<CR>
 
 " file syntaxes
 " associate *.foo with php filetype
