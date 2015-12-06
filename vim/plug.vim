@@ -11,4 +11,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'chriskempson/vim-tomorrow-theme'
 Plug 'captbaritone/molokai'
 
+" Completion
+Plug 'mattn/emmet-vim', { 'for': 'html' }
+
 call plug#end()
