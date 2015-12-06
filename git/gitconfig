@@ -6,7 +6,12 @@
 [difftool]
 	prompt = false
 [push]
-	default = matching
+	default = simple
 [alias]
 	dt = difftool
 	df = diff
+[color]
+	ui = auto
+[gui]
+	fontui = -family \"Liberation Sans\" -size 14 -weight normal -slant roman -underline 0 -overstrike 0
+	fontdiff = -family \"Liberation Mono\" -size 14 -weight normal -slant roman -underline 0 -overstrike 0
