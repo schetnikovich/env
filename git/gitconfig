@@ -5,3 +5,8 @@
 	tool = vimdiff
 [difftool]
 	prompt = false
+[push]
+	default = matching
+[alias]
+	dt = difftool
+	df = diff
