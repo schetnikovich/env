@@ -1,6 +1,13 @@
+
 function link() {
     if [ -f "$2" ]; then
-        echo "File $2 already exists"
+
+        if [ "$2" -ef "$1" ]; then
+            echo "✓ File $2 is valid"
+        else
+            echo "✗ File $2 already exists"
+        fi
+        
         return
     elif [ -d "$2" ]; then
         filename=$(basename $1)
@@ -12,4 +19,5 @@ function link() {
     fi 
 
     ln -s $1 $2 
+    echo "★ Link $2 created"
 }

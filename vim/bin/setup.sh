@@ -7,5 +7,5 @@ source $ENV_DIR/bin/include.sh
 
 mkdir -p ~/.vim
 link $DIR/config.vim   ~/.vimrc
-link $DIR/plug.vim     ~/.vim
+link $DIR/plug.vim     ~/.vim/plug.vim
 
