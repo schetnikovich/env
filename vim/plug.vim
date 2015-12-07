@@ -39,4 +39,7 @@ Plug 'xolox/vim-misc'
 " Manage tags index in ~/.vimtags filder
 Plug 'xolox/vim-easytags'
 
+" Opens pane to execute command"
+Plug 'benmills/vimux'
+
 call plug#end()
