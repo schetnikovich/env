@@ -39,4 +39,7 @@ Plug 'xolox/vim-misc'
 " Manage tags index in ~/.vimtags filder
 Plug 'xolox/vim-easytags'
 
+" Syntax highlighting for LESS
+Plug 'groenewege/vim-less'
+
 call plug#end()
