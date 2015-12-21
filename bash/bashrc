@@ -17,4 +17,5 @@ export PATH=$PATH:$HOME/main/bin
 #   cdd
 #   cdd my-project
 function cdd() { cd ~/main/dev/"$@" ;}
+function cde() { cd ~/main/env/"$@" ;}
 
