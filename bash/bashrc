@@ -10,6 +10,7 @@ stty -ixon
 alias cdm='cd ~/main'
 alias ..='. ~/.bashrc'
 alias o='thunar .'
+export PATH=$PATH:$HOME/main/bin
 
 # Quick way to go to "~/main/dev" folder
 # Usage:

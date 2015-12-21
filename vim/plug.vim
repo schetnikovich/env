@@ -42,4 +42,7 @@ Plug 'xolox/vim-easytags'
 " Syntax highlighting for LESS
 Plug 'groenewege/vim-less'
 
+" Opens pane to execute command"
+Plug 'benmills/vimux'
+
 call plug#end()
