@@ -65,3 +65,9 @@ set mousemodel=extend
 " Set syntax higlighting
 autocmd BufNewFile,BufRead *.marko   set syntax=html
 " :map <F2> :echo 'Current time is ' . strftime('%c')<CR>
+
+" Delete symbol before cursor (mirror for C-H)
+imap <C-L> <Del>
+
+" Reload vimrc
+command! Reload source $HOME/.vimrc
