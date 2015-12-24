@@ -71,3 +71,9 @@ imap <C-L> <Del>
 
 " Reload vimrc
 command! Reload source $HOME/.vimrc
+
+:noremap j gj
+:noremap k gk
+
+" Tell Vim to only wrap at a character in the 'breakat' option
+:set linebreak
