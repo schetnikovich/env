@@ -77,3 +77,6 @@ command! Reload source $HOME/.vimrc
 
 " Tell Vim to only wrap at a character in the 'breakat' option
 :set linebreak
+
+" Internal man plugin (use :Man command)
+:runtime! ftplugin/man.vim

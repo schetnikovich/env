@@ -19,3 +19,4 @@ export PATH=$PATH:$HOME/main/bin
 function cdd() { cd ~/main/dev/"$@" ;}
 function cde() { cd ~/main/env/"$@" ;}
 
+function viman() { vim "+:Man $@" "+:only" ; }
