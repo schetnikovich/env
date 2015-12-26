@@ -74,6 +74,8 @@ command! Reload source $HOME/.vimrc
 
 :noremap j gj
 :noremap k gk
+:noremap ^ g^
+:noremap $ g$
 
 " Tell Vim to only wrap at a character in the 'breakat' option
 :set linebreak
