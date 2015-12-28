@@ -3,7 +3,14 @@ screen
 colorscheme mine
 
 
+" Interactive search (automatically select first match)
 set incsearch
+
+" Do not select all matches
+set nohlsearch
+
+set ignorecase
+set smartcase
 
 " Automatically resolve symbolic links on l or Enter.
 set nofollowlinks
@@ -17,7 +24,7 @@ mark d ~/main/dev/
 mark h ~/
 
 " Open vim to edit vifmrc and apply settings after returning to vifm
-nnoremap ,c :write | execute ':!vim $MYVIFMRC' | restart<cr>
+nnoremap \c :write | execute ':!vim $MYVIFMRC' | restart<cr>
 
 " Yank current directory path into the clipboard (and trim it before)
 nnoremap yd :!echo %d | tr -d " \t\n\r" | xclip -sel clip %i<cr>
