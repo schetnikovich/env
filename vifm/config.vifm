@@ -41,6 +41,8 @@ command! run !! ./%f
 command! diff vim -d %f %F
 command! reload :write | restart
 
+" Add ability to exit Vifm with :qa command
+command qa :q
 
 
 nnoremap o :!thunar .<cr>
