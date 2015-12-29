@@ -37,7 +37,7 @@ let g:vi30m_markdown_folding_disabled=1
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
 " map Ctrl+N to toggle NERDTree
-map <F2> :NERDTreeFocus<CR>
+map <C-N> :NERDTreeFocus<CR>
 map <F3> :NERDTreeFind<CR>
 let NERDTreeIgnore = ['\.swp$']
 " show hidden files by default in NERDTree
