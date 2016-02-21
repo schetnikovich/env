@@ -37,7 +37,7 @@ Plug 'majutsushi/tagbar'
 Plug 'xolox/vim-misc'
 
 " Manage tags index in ~/.vimtags filder
-Plug 'xolox/vim-easytags'
+" Plug 'xolox/vim-easytags'
 
 " Syntax highlighting for LESS
 Plug 'groenewege/vim-less'

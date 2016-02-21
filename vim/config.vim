@@ -17,6 +17,10 @@ set autoindent
 set smartindent
 filetype plugin on
 
+" Configure NERDTree
+source ~/main/env/vim/nerdtree/nerdtree.vim
+
+
 
 " Color scheme
 set t_Co=256 " enable 256 colors
@@ -28,20 +32,7 @@ colorscheme molokai
 " disable default folding for markdown
 let g:vi30m_markdown_folding_disabled=1
 
-" NERDTree -------------------------------------------------------
 
-" run NERDTree automatically
-" autocmd vimenter * NERDTree
-
-" close Vim if only NERDTree is open
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
-
-" map Ctrl+N to toggle NERDTree
-map <C-N> :NERDTreeFocus<CR>
-map <F3> :NERDTreeFind<CR>
-let NERDTreeIgnore = ['\.swp$']
-" show hidden files by default in NERDTree
-let g:NERDTreeShowHidden=1
 
 " Tagbar ---------------------------------------------------------
 nmap <F8> :TagbarToggle<CR>

@@ -5,10 +5,5 @@ ENV_DIR=$(dirname $DIR)                                           # Get root env
 
 source $ENV_DIR/bin/include.sh
 
-mkdir -p ~/.vim
-link $DIR/config.vim   ~/.vimrc
-link $DIR/plug.vim     ~/.vim/plug.vim
-
-# Place link on "plugin.vim" to special NERDTree folder
-link $DIR/nerdtree/plugin.vim     ~/.vim/plugged/nerdtree/nerdtree_plugin/plugin.vim
+link $DIR/Library/KeyBindings/DefaultKeyBinding.dict  ~/Library/KeyBindings/DefaultKeyBinding.dict
 

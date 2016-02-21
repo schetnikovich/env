@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>^[</key>
+	<string>cancelOperation:</string>
+	<key>^h</key>
+	<string>deleteBackward:</string>
+	<key>^l</key>
+	<string>deleteForward:</string>
+	<key>^m</key>
+	<string>insertNewline:</string>
+	<key>^д</key>
+	<string>deleteForward:</string>
+	<key>^р</key>
+	<string>deleteBackward:</string>
+	<key>~h</key>
+	<string>moveLeft:</string>
+	<key>~j</key>
+	<string>moveDown:</string>
+	<key>~k</key>
+	<string>moveUp:</string>
+	<key>~l</key>
+	<string>moveRight:</string>
+	<key>~д</key>
+	<string>moveRight:</string>
+	<key>~о</key>
+	<string>moveDown:</string>
+	<key>~р</key>
+	<string>moveLeft:</string>
+</dict>
+</plist>
