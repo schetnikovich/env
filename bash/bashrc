@@ -1,23 +1,56 @@
-if [[ -z $TMUX ]]; then
-    export TERM='xterm-256color'
-else
-    export TERM='screen-256color'
-fi
 
-
+# Set vi bindings
 set -o vi
+
+# Disable STOP (CTRL-S) and START (CTRL-Q) signals
 stty -ixon
-alias cdm='cd ~/main'
+
+# Alias to reload bashrc 
 alias ..='. ~/.bashrc'
-alias o='thunar .'
-alias ll='LC_COLLATE=C ls -alF --group-directories-first'
-export PATH=$PATH:$HOME/main/bin
+
+# Add 
+export PATH="$PATH":$HOME/main/bin
 
 # Quick way to go to "~/main/dev" folder
 # Usage:
 #   cdd
 #   cdd my-project
-function cdd() { cd ~/main/dev/"$@" ;}
-function cde() { cd ~/main/env/"$@" ;}
+function cdm() { cd ~/main/"$@"      ;}
+function cda() { cd ~/main/apps/"$@" ;}
+function cdd() { cd ~/main/dev/"$@"  ;}
+function cde() { cd ~/main/env/"$@"  ;}
+function cdl() { cd ~/main/libs/"$@" ;}
+function cdt() { cd ~/main/libs/"$@" ;}
+function cdb() { cd ~/main/bin/"$@" ;}
 
-function viman() { vim "+:Man $@" "+:only" ; }
+
+# Access common files with vim
+function viman()  { vim "+:Man $@" "+:only" ;}
+function vibash() { vim ~/.bashrc ;}
+function vitmux() { vim ~/.tmux.conf ;}
+function vivifm() { vim ~/.todo.conf ;}
+
+
+# Linux specific config
+if [[ $(uname) == "Linux" ]]; then
+  alias ll='LC_COLLATE=C ls -alF --group-directories-first'
+  alias o='thunar .'
+fi
+
+
+# Mac specific config
+if [[ $(uname) == "Darwin" ]]; then
+  alias ll='ls -alFGh'
+  alias o='open .'
+  # export PS1="\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\h:\[\033[33;1m\]\w\[\033[m\]\$ "
+  export PS1="\[\033[36m\]\u\[\033[m\]:\[\033[33;1m\]\w\[\033[m\]\$ "
+  # export CLICOLOR=1
+  # export LSCOLORS=ExFxBxDxCxegedabagacad
+fi
+
+# Not needed, seems
+# if [[ -z $TMUX ]]; then
+#     export TERM='xterm-256color'
+# else
+#     export TERM='screen-256color'
+# fi
