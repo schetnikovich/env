@@ -1,3 +1,10 @@
+# If inside tmux, advertise as 'screen-256color'. 
+# Otherwise, advertise as 'xterm-256color'
+if [[ -z $TMUX ]]; then
+    export TERM='xterm-256color'
+else
+    export TERM='screen-256color'
+fi
 
 # Set vi bindings
 set -o vi
@@ -47,10 +54,3 @@ if [[ $(uname) == "Darwin" ]]; then
   # export CLICOLOR=1
   # export LSCOLORS=ExFxBxDxCxegedabagacad
 fi
-
-# Not needed, seems
-# if [[ -z $TMUX ]]; then
-#     export TERM='xterm-256color'
-# else
-#     export TERM='screen-256color'
-# fi
