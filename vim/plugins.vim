@@ -10,6 +10,9 @@ Plug 'mattn/emmet-vim', { 'for': 'html' }
 " Change brackets and quotes
 Plug 'tpope/vim-surround'
 
+" Commentary plugin
+Plug 'tomtom/tcomment_vim'
+
 " Fuzzy file opener
 " Plug 'kien/ctrlp.vim' <-- Not maintained any more
 Plug 'ctrlpvim/ctrlp.vim'
