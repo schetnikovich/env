@@ -27,7 +27,7 @@ function cda() { cd ~/main/apps/"$@" ;}
 function cdd() { cd ~/main/dev/"$@"  ;}
 function cde() { cd ~/main/env/"$@"  ;}
 function cdl() { cd ~/main/libs/"$@" ;}
-function cdt() { cd ~/main/libs/"$@" ;}
+function cdt() { cd ~/main/tmp/"$@" ;}
 function cdb() { cd ~/main/bin/"$@" ;}
 
 
