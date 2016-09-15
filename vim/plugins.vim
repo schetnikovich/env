@@ -2,7 +2,7 @@ call plug#begin('~/.vim/plugged')
 
 " Color schemas
 Plug 'chriskempson/vim-tomorrow-theme'
-Plug 'captbaritone/molokai'
+" Plug 'captbaritone/molokai'
 
 " Completion
 Plug 'mattn/emmet-vim', { 'for': 'html' }
@@ -36,9 +36,12 @@ Plug 'xolox/vim-misc'
 " Plug 'xolox/vim-easytags'
 
 " Syntax highlighting for LESS
-Plug 'groenewege/vim-less'
+Plug 'groenewege/vim-less', { 'for': 'less' }
 
 " Opens pane to execute command"
 Plug 'benmills/vimux'
+
+" Go (golang) support
+Plug 'fatih/vim-go', { 'for': 'go' }
 
 call plug#end()
