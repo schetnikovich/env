@@ -20,11 +20,9 @@ filetype plugin on
 " Configure NERDTree
 source ~/main/env/vim/nerdtree/nerdtree.vim
 
-
-
 " Color scheme
 set t_Co=256 " enable 256 colors
-colorscheme molokai
+colorscheme Tomorrow-Night-Eighties
 
 " highlight all search matches
 " set hlsearch
