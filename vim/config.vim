@@ -47,6 +47,15 @@ set mousemodel=extend
 " Tell Vim to only wrap at a character in the 'breakat' option
 set linebreak
 
+" The 'directory' option contains a list of directories which Vim will use to
+" try and store the swap file (.swp), instead of the current file's folder.
+" The ^= syntax for :set prepends the directory name to the head of the list,
+" so Vim will check that directory first. The // at the end of the directory 
+" name tells Vim to use the absolute path to the file to create the swap file 
+" so there aren't collisions between files of the same name from different 
+" directories.
+set directory^=/tmp//
+
 
 " --------------------------------------------------------------
 "  In the following section we do two things:
