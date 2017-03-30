@@ -4,11 +4,18 @@ call plug#begin('~/.vim/plugged')
 Plug 'chriskempson/vim-tomorrow-theme'
 " Plug 'captbaritone/molokai'
 
+" Show list of buffers with <Leader>b (usually \b)
+Plug 'jeetsukumaran/vim-buffergator'
+
 " Completion
 Plug 'mattn/emmet-vim', { 'for': 'html' }
 
 " Change brackets and quotes
 Plug 'tpope/vim-surround'
+
+" Allows to repeat compound commands (works with vim-surround without
+" configuration)
+Plug 'tpope/vim-repeat'
 
 " Commentary plugin
 Plug 'tomtom/tcomment_vim'
