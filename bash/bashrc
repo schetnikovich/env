@@ -49,8 +49,5 @@ fi
 if [[ $(uname) == "Darwin" ]]; then
   alias ll='ls -alFGh'
   alias o='open .'
-  # export PS1="\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\h:\[\033[33;1m\]\w\[\033[m\]\$ "
-  export PS1="\[\033[36m\]\u\[\033[m\] \[\033[33;1m\]\w\[\033[m\] \$ "
-  # export CLICOLOR=1
-  # export LSCOLORS=ExFxBxDxCxegedabagacad
+  export PS1="\[\e[30;43m\]\u\[\e[m\] \[\e[33m\]\w\[\e[m\]\[\e[32m\] \$\[\e[m\] "
 fi
