@@ -50,4 +50,8 @@ if [[ $(uname) == "Darwin" ]]; then
   alias ll='ls -alFGh'
   alias o='open .'
   export PS1="\[\e[30;43m\]\u\[\e[m\] \[\e[33m\]\w\[\e[m\]\[\e[32m\] \$\[\e[m\] "
+
+  # Bash completion. 
+  # Install it with `brew install bash-completion`
+  [ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
 fi
