@@ -12,8 +12,5 @@
 	df = diff
 [color]
 	ui = auto
-[gui]
-	fontui = -family \"Liberation Sans\" -size 14 -weight normal -slant roman -underline 0 -overstrike 0
-	fontdiff = -family \"Liberation Mono\" -size 14 -weight normal -slant roman -underline 0 -overstrike 0
 [core]
-	editor = /usr/local/bin/vim
+	editor = vim
