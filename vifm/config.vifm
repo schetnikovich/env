@@ -17,6 +17,13 @@ set suggestoptions=normal,visual,view,delay,keys,registers,marks
 " Automatically resolve symbolic links on l or Enter.
 set nofollowlinks
 
+" If ’cpoptions’ contains "t" flag, <tab> and <c-i> switch active pane just 
+" like <space> does, otherwise it goes forward through directory history of 
+" current view. Nonexistent directories are automatically skipped.
+set cpoptions-=t
+
+" Switch quick preview view mode
+nnoremap w :view<cr>
 
 " Start shell in current directory
 nnoremap s :shell<cr>
