@@ -60,6 +60,46 @@ command! reload :write | restart
 command qa :q
 
 
-nnoremap o :!thunar .<cr>
+" GUI File Manager
+" ----------------
+" Binding to open some File Manager
+
+if system('uname') == 'Darwin'
+  " Option -R means reveal the file(s) in the Finder instead of opening them
+  nnoremap o :!open -a Finder -R %c<cr>
+elseif system('uname') == 'Linux'
+  if executable('thunar')
+    nnoremap o :!thunar .<cr>
+  elseif executable('nautilus')
+    nnoremap o :!nautilus .<cr>
+  endif
+endif
 
 
+" FileViewers 
+" -----------
+" Syntax highlighting in preview mode (i.e. in :view or 'e')
+" Tool 'highlight' should be installed
+" Mac: brew install highlight
+
+if executable('highlight')
+fileviewer *.[ch],*.cc,*.hh,*.[ch]pp highlight -O xterm256 --syntax c %c
+fileviewer *.html,*.htm,*.marko highlight -O xterm256 --syntax html %c
+fileviewer *.js highlight -O xterm256 -s moria --syntax js %c
+fileviewer *.ts highlight -O xterm256 -s moria --syntax ts %c
+fileviewer *.json highlight -O xterm256 -s moria --syntax json %c
+fileviewer *.css highlight -O xterm256 -s moria --syntax css %c
+fileviewer *.less highlight -O xterm256 -s moria --syntax less %c
+fileviewer *.scss highlight -O xterm256 -s moria --syntax scss %c
+fileviewer *.md highlight -O xterm256 -s moria --syntax md %c
+fileviewer *.sh highlight -O xterm256 -s moria --syntax sh %c
+fileviewer *.java highlight -O xterm256 -s moria --syntax java %c
+fileviewer *.bat highlight -O xterm256 -s moria --syntax bat %c
+fileviewer *.cs highlight -O xterm256 -s moria --syntax cs %c
+fileviewer *.diff highlight -O xterm256 -s moria --syntax diff %c
+fileviewer *.go highlight -O xterm256 -s moria --syntax go %c
+fileviewer *.yml highlight -O xterm256 -s moria --syntax yml %c
+fileviewer *.ruby highlight -O xterm256 -s moria --syntax ruby %c
+fileviewer *.py highlight -O xterm256 -s moria --syntax python %c
+fileviewer *.xml highlight -O xterm256 -s moria --syntax xml %c
+endif
