@@ -109,8 +109,8 @@ source ~/main/env/vim/plugins.vim
 " Show existing tab with 4 spaces width
 set tabstop=4
 
-" When indenting with '>', use 4 spaces width
-set shiftwidth=4
+" When indenting with '>', use 2 spaces width
+set shiftwidth=2
 
 set softtabstop=4
 set expandtab

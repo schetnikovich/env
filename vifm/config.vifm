@@ -2,6 +2,13 @@ windo normal zo
 screen
 colorscheme mine
 
+" Column view
+" -----------
+" Number means width in characters
+" uname - user name
+" gname - group name
+set viewcolumns=-{name}..,8{perms},9{uname}..,-9{gname}..,7{size}
+
 
 " Interactive search (automatically select first match)
 set incsearch
