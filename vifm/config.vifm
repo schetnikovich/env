@@ -27,7 +27,7 @@ set nofollowlinks
 " If ’cpoptions’ contains "t" flag, <tab> and <c-i> switch active pane just 
 " like <space> does, otherwise it goes forward through directory history of 
 " current view. Nonexistent directories are automatically skipped.
-set cpoptions-=t
+" set cpoptions-=t
 
 " Switch quick preview view mode
 nnoremap w :view<cr>
@@ -64,7 +64,7 @@ command! diff vim -d %f %F
 command! reload :write | restart
 
 " Add ability to exit Vifm with :qa command
-command qa :q
+command qa! :q
 
 
 " GUI File Manager

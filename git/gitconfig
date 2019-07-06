@@ -14,6 +14,7 @@
 [alias]
 	dt = difftool
 	df = diff
+    st = status -sb
 [color]
 	ui = auto
 [core]

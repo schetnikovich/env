@@ -14,19 +14,32 @@
 	<string>deleteForward:</string>
 	<key>^р</key>
 	<string>deleteBackward:</string>
+
+	<key>^и</key>
+	<string>moveLeft:</string>
+	<key>~а</key>
+	<string>moveRight:</string>
+	<key>~т</key>
+	<string>moveDown:</string>
+	<key>~з</key>
+	<string>moveUp:</string>
+
 	<key>~h</key>
 	<string>moveLeft:</string>
+	<key>~р</key>
+	<string>moveLeft:</string>
+
 	<key>~j</key>
 	<string>moveDown:</string>
-	<key>~k</key>
-	<string>moveUp:</string>
+	<key>~о</key>
+	<string>moveDown:</string>
+
 	<key>~l</key>
 	<string>moveRight:</string>
 	<key>~д</key>
 	<string>moveRight:</string>
-	<key>~о</key>
-	<string>moveDown:</string>
-	<key>~р</key>
-	<string>moveLeft:</string>
+
+	<key>~k</key>
+	<string>moveUp:</string>
 </dict>
 </plist>
