@@ -1,9 +1,17 @@
-# If inside tmux, advertise as 'screen-256color'. 
-# Otherwise, advertise as 'xterm-256color'
+# tmux specific configuration
 if [[ -z $TMUX ]]; then
-    export TERM='xterm-256color'
+  # If not inside tmux, advertise as 'xterm-256color'
+  export TERM='xterm-256color'
+
 else
-    export TERM='screen-256color'
+  # If inside tmux, advertise as 'screen-256color'. 
+  export TERM='screen-256color'
+
+  # Rename tmux session to "main" if it is "0"
+  SESSION_NAME=$(tmux display-message -p '#S')
+  if [[ "$SESSION_NAME" == "0" ]]; then
+    tmux rename-session "main"
+  fi
 fi
 
 # Set vi bindings
@@ -37,6 +45,11 @@ function vibash() { vim ~/.bashrc ;}
 function vitmux() { vim ~/.tmux.conf ;}
 function vivifm() { vim ~/.todo.conf ;}
 
+# Hide deprecation warning on MAC
+export BASH_SILENCE_DEPRECATION_WARNING=1
+
+# Disable per-terminal-session command history (Mac)
+export SHELL_SESSION_HISTORY=0
 
 # Linux specific config
 if [[ $(uname) == "Linux" ]]; then
